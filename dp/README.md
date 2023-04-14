@@ -109,9 +109,10 @@ The recurrence relation for the house robber problem is:
 
 $$
 \begin{equation}
-rob(i)=
+rob(i)= \max
     \begin{cases}
-       max\{rob(i + 1), rob(i + 2)+ nums[i]\}
+       nums[i] + rob(i + 2), \\
+       rob(i + 1)
     \end{cases}
 \end{equation}
 $$
