@@ -101,7 +101,13 @@ def fib(n):
         temp = second # save the second value
         second = first + second # compute the new second value
         first = temp # set the first value to the old second value
+    
+    return second
 ```
+
+Time: $O(n)$
+
+Space: $O(1)$
 
 ## 2. House Robber
 
