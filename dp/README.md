@@ -140,13 +140,13 @@ Space: $O(1)$
 ## 3. Longest Increasing Subsequence
 
 ```python
-    def LIS(nums):
+ def LIS(nums):
     n = len(nums)
     res = [1] * n
 
-    for i in range(n - 1, -1, -1):
+    for i in range(n - 1, -1, -1): # bottom up
         for j in range(i + 1, n):
-            if nums[i] < nums[j]:
+            if nums[i] < nums[j]: # if i < j and nums[i] < nums[j]
                 res[i] = max(res[i], 1 + res[j])
     print("DP: ", res)
     return max(res) # O(n) statement
