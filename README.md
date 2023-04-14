@@ -6,6 +6,8 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/jsondevers/CMSC389O)
 ![GitHub repo size](https://img.shields.io/github/repo-size/jsondevers/CMSC389O)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jsondevers/CMSC389O)
+![GitHub last commit](https://img.shields.io/github/last-commit/jsondevers/CMSC389O)
+
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/jsondevers)
 
 Just started this lol. I'll update this as I go along.
