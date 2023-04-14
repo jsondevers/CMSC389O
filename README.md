@@ -6,17 +6,13 @@ The Fibonacci sequence is defined by the recurrence relation:
 
 $$F_n = F_{n-1} + F_{n-2}$$
 
-More formally,
-
-$$
- F(n) = \left\{
+More formally, $$F(n) = \left\{
 \begin{array}{ll}
  0 & \text{$n = 0$} \\
  1 & \text{$n = 1$} \\
     F(n-1) + F(n-2) & \text{$n > 1$}
 \end{array}
-\right.
-$$
+\right.$$
 
 ```python
 def fib(n):
