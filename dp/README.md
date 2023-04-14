@@ -39,6 +39,7 @@ graph TD;
     5-->3_;
     4-->3;
     4-->2__;
+    2__-->1___;
 
     3-->2_;
     3-->1;
@@ -47,7 +48,7 @@ graph TD;
     2-->1_;
 ```
 
-I tried using mermaid, but it doesn't work well with github markdown. I'll have to look into it more.
+I tried using mermaid, but it doesn't work well with github markdown. I'll have to look into it more. Basically ignore the underscores because they don't let me make duplicate nodes.
 
 ## Memoization
 
