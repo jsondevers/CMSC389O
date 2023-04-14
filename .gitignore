@@ -1,0 +1,11 @@
+# mac settings
+.DS_Store
+**/.DS_Store
+
+# VSCode
+.vscode/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
