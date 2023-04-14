@@ -16,6 +16,17 @@ $$F(n) = \left\{
 \end{array}
 \right.$$
 
+$$
+\begin{equation}
+F(n)=
+    \begin{cases}
+        0 & n = 0 \\
+        1 & n = 1 \\
+        F(n-1) + F(n-2) & n > 1
+    \end{cases}
+\end{equation}
+$$
+
 ```python
 def fib(n):
     if n < 2:
