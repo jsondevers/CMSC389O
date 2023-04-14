@@ -1,7 +1,5 @@
 # Dynamic Programming
 
-## Recurrence Relation
-
 ## 1. Fibonacci Sequence
 
 The Fibonacci sequence is defined by the recurrence relation:
