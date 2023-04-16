@@ -10,9 +10,9 @@
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/jsondevers)
 
-Just started this lol. I'll update this as I go along.
+This is a repository for the Student Initiated Course ([STIC](https://stics.umd.edu/)), [CMSC389](https://stics.umd.edu/catalog.html): The Coding Interview, course at the University of Maryland, College Park.
 
-[Here](https://leetcode.com/cmsc389o/) is the leetcode account for some of the problems we've done in class and there is a folder of problems for each topic.
+[Here](https://leetcode.com/cmsc389o/) is the LeetCode account for some of the problems we've done in class and there is a folder of problems for each topic.
 
 ## Lectures
 
