@@ -1,5 +1,22 @@
 # Dynamic Programming
 
+Dynamic programming is a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions. A good way to think about it is as a "careful" brute force or a "careful" recursion. We only solve the subproblems needed and when we can, reuse the solutions to those subproblems to solve the larger problem.
+
+## General Approach
+
+1. Visualize examples
+2. Find appropriate subproblems
+3. Find relationships between subproblems
+4. Generalize the relationship
+5. Think of a recursive approach and implement subproblems in order
+
+## Mathematical Approach
+
+1. Develop a recurrence relation: This is the majority of being able to solve a DP problem. The recurrence relation is the formula that relates the solution to the subproblems to the solution to the larger problem. It is usually a function of the subproblem's solution and the input to the subproblem.
+2. Determine if you're solving the correct subproblem: This is the most common mistake. You need to make sure that you're solving the correct subproblem.
+    - Determine if there are any overlapping subproblems and if you're solving the same thing multiple times and see if you can reuse the solution.
+3. Determine the order of the subproblems: If you're using a bottom up approach versus a top down approach, the order of which you solve the subproblems matters.
+
 ## 1. Fibonacci Sequence
 
 The Fibonacci sequence is defined by the recurrence relation:
