@@ -69,10 +69,8 @@ graph TD;
     h[fib-2] --> p[fib-0]
     i[fib-1] --> q[fib-0]
     j[fib-1] --> r[fib-0]
-    k[fib-0] --> s[fib-0]
     l[fib-1] --> t[fib-0]
-    m[fib-0] --> u[fib-0]
-    n[fib-0] --> v[fib-0]
+
 ```
 
 ## Memoization
