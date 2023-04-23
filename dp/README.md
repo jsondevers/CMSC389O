@@ -48,22 +48,32 @@ Time: $O(2^n)$, gross!
 
 Space: $O(n)$
 
+Below we can see how many unnecessary calls are made to `fib` when we call `fib(5)` and it makes its recursive calls to `fib(5-2)` and `fib(5-1)` and so on. Every repeated call to `fib` that you see is a call that we can avoid by using dynamic programming.
+
 ```mermaid
 graph TD;
-    5-->4;
-    5-->3_;
-    4-->3;
-    4-->2__;
-    2__-->1___;
-
-    3-->2_;
-    3-->1;
-    3_-->1__;
-    3_-->2;
-    2-->1_;
+    a[fib-5] --> b[fib-4]
+    a[fib-5] --> c[fib-3]
+    b[fib-4] --> d[fib-3]
+    b[fib-4] --> e[fib-2]
+    c[fib-3] --> f[fib-2]
+    c[fib-3] --> g[fib-1]
+    d[fib-3] --> h[fib-2]
+    d[fib-3] --> i[fib-1]
+    e[fib-2] --> j[fib-1]
+    e[fib-2] --> k[fib-0]
+    f[fib-2] --> l[fib-1]
+    f[fib-2] --> m[fib-0]
+    g[fib-1] --> n[fib-0]
+    h[fib-2] --> o[fib-1]
+    h[fib-2] --> p[fib-0]
+    i[fib-1] --> q[fib-0]
+    j[fib-1] --> r[fib-0]
+    k[fib-0] --> s[fib-0]
+    l[fib-1] --> t[fib-0]
+    m[fib-0] --> u[fib-0]
+    n[fib-0] --> v[fib-0]
 ```
-
-I tried using mermaid, but it doesn't work well with github markdown. I'll have to look into it more. Basically ignore the underscores because they don't let me make duplicate nodes.
 
 ## Memoization
 
@@ -82,7 +92,7 @@ def fib(n, memo):
 
 Our `memo` is a dictionary that maps from `n` to $F(n)$.
 
-Time: $O(n)$ I guess maybe $O(n^2)$ because of the dictionary lookup? But, we could have also used a an array and guaranteed $O(n)$.
+Time: $O(n)$ I guess maybe $O(n^2)$ because of the dictionary lookup in the worstcase. But, we could have also used a an array and guaranteed $O(n)$.
 
 ```python
 memo = [-1] * (n+1)
@@ -154,7 +164,7 @@ Time: $O(n)$
 
 Space: $O(1)$
 
-## 3. Longest Increasing Subsequence
+## 3. Longest Increasing Subsequence (LIS)
 
 ```python
  def LIS(nums):
