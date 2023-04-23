@@ -77,9 +77,9 @@ These traversals are easily implemented recursively. We can also implement them 
 ```python
 def preorder(root):
     if root:
-        print(root.val)
-        preorder(root.left)
-        preorder(root.right)
+        print(root.val) # root
+        preorder(root.left) # left
+        preorder(root.right) # right
 ```
 
 - **In-order**: left, root, right
@@ -88,9 +88,9 @@ def preorder(root):
 ```python
 def inorder(root):
     if root:
-        inorder(root.left)
-        print(root.val)
-        inorder(root.right)
+        inorder(root.left) # left
+        print(root.val) # root
+        inorder(root.right) # right
 ```
 
 - **Post-order**: left, right, root
@@ -98,7 +98,23 @@ def inorder(root):
 ```python
 def postorder(root):
     if root:
-        postorder(root.left)
-        postorder(root.right)
-        print(root.val)
+        postorder(root.left) # left
+        postorder(root.right) # right
+        print(root.val) # root
+```
+
+- **Level-order**: BFS is a way to traverse a tree level by level. We can implement this using a queue data structure. This is known as breadth-first search (BFS) because we are going as wide as possible before going to the next node.
+
+```python
+def levelorder(root):
+    if root is None:
+        return
+    queue = [root]
+    while queue: # while queue is not empty
+        node = queue.pop(0) # pop from front of queue
+        print(node.val)
+        if node.left: # if left child exists
+            queue.append(node.left)
+        if node.right: # if right child exists
+            queue.append(node.right)
 ```
