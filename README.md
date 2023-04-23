@@ -10,16 +10,26 @@
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/jsondevers)
 
-This is a repository for the Student Initiated Course ([STIC](https://stics.umd.edu/)), [CMSC389](https://stics.umd.edu/catalog.html): The Coding Interview, course at the University of Maryland, College Park.
+## Description
+
+This is a repository for the Student Initiated Course ([STIC](https://stics.umd.edu/)), [CMSC389](https://stics.umd.edu/catalog.html): The Coding Interview, a course at the University of Maryland, College Park.
 
 [Here](https://leetcode.com/cmsc389o/) is the LeetCode account for some of the problems we've done in class and there is a folder of problems for each topic.
+
+This repository was created in order to help students prepare for the coding interview. It contains notes, code, and practice problems for each topic that can be referenced during the course and after. I hope that students find this helpful!
+
+The notes are written in markdown and the code is written in Python. The notes are meant to be a reference for the topic and the code is meant to be a reference for the syntax and implementation of the topic.
 
 ## Lectures
 
 | Week | Topic | Notes |
 | ------- | -------- | ------ |
-| 11 | [Trees](big_o/README.md) | DFS/BFS, Traversals, Recursion |
+| 11 | [Trees](trees/README.md) |  Properties, Traversals  |
 | 12 | [Dynamic Programming](dp/README.md) | Covered Fib, House Robber, and LCS.
+
+## Contributing
+
+If you would like to contribute to this repository, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## TODO
 
