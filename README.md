@@ -18,6 +18,7 @@ This is a repository for the Student Initiated Course ([STIC](https://stics.umd.
 
 | Week | Topic | Notes |
 | ------- | -------- | ------ |
+| 11 | [Trees](big_o/README.md) | DFS/BFS, Traversals, Recursion |
 | 12 | [Dynamic Programming](dp/README.md) | Covered Fib, House Robber, and LCS.
 
 ## TODO
