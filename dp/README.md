@@ -70,7 +70,6 @@ graph TD;
     i[fib-1] --> q[fib-0]
     j[fib-1] --> r[fib-0]
     l[fib-1] --> t[fib-0]
-
 ```
 
 ## Memoization
@@ -138,10 +137,10 @@ The recurrence relation for the house robber problem is:
 
 $$
 \begin{equation}
-rob(i)= \max
+\text{rob(i)}= \max
     \begin{cases}
-       nums[i] + rob(i + 2), \\
-       rob(i + 1)
+       \text{nums[i]} + \text{rob(i + 2)}, \\
+       \text{rob(i + 1)}
     \end{cases}
 \end{equation}
 $$
