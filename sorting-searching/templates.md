@@ -33,7 +33,7 @@ func binarySearch(arr):
             left = mid + 1
         else:
             right = mid - 1
-
+```
 
 
 #### Binary Search left-most
